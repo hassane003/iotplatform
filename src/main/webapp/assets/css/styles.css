@@ -1,0 +1,44 @@
+﻿:root{
+  --bg:#0b1222;           /* fond plus profond */
+  --panel:#0f172a;        /* panneau */
+  --muted:#cbd5e1;        /* slate-300 (texte secondaire */
+  --brand:#22d3ee;        /* cyan-400 */
+  --fg:#ffffff;           /* texte principal clair */
+}
+html,body{height:100%;}
+body{
+  background:
+    radial-gradient(1200px 600px at 10% -10%, rgba(34,211,238,.25), transparent 60%),
+    radial-gradient(1000px 500px at 100% 0%, rgba(99,102,241,.20), transparent 60%),
+    var(--bg);
+  color:var(--fg);
+}
+a{ color:#a5f3fc; }
+.hero{ padding:56px 0 8px; text-align:center; }
+.hero h1{
+  font-weight:800; letter-spacing:.4px;
+  background:linear-gradient(90deg, var(--brand), #60a5fa);
+  -webkit-background-clip:text; background-clip:text; color:transparent;
+  font-size:clamp(32px,4vw,48px);
+  margin-bottom:0; /* on supprime l’espace de l’ancien paragraphe */
+}
+.badge{
+  display:inline-block; padding:4px 10px; border-radius:999px;
+  background:rgba(34,211,238,.14); color:#e0f2fe; font-size:12px;
+  border:1px solid rgba(34,211,238,.45);
+}
+.card{
+  background:linear-gradient(180deg, rgba(255,255,255,.08), rgba(255,255,255,.03));
+  border:1px solid rgba(148,163,184,.22);
+  border-radius:16px; padding:20px; height:100%;
+  transition:transform .15s ease, box-shadow .15s ease, border-color .15s ease;
+  color:var(--fg);
+}
+.card:hover{
+  transform:translateY(-3px);
+  box-shadow:0 14px 40px rgba(0,0,0,.35);
+  border-color:rgba(34,211,238,.45);
+}
+.card h3{ margin:8px 0 6px; font-weight:700; }
+.card p{ color:var(--muted); margin:0 0 14px; }
+.footer{ color:#cbd5e1; font-size:13px; text-align:center; padding:24px 0 36px; }
