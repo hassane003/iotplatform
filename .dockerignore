@@ -1,0 +1,10 @@
+﻿.git
+.idea
+.vscode
+*.iml
+*.log
+logs/
+target/
+!target/iotplatform.war
+.DS_Store
+Thumbs.db
