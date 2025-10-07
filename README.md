@@ -22,6 +22,7 @@ Application “IoT Dashboard” permettant de **simuler l’ingestion** de mesur
 ---
 
 ## 📁 Structure du projet
+```
 iotplatform/
 ├─ pom.xml
 ├─ src/
@@ -41,3 +42,4 @@ iotplatform/
 │ │ ├─ index.html # page d’accueil stylée
 │ │ └─ WEB-INF/views/iot-dashboard.jsp
 └─ target/ (généré par Maven)
+```
